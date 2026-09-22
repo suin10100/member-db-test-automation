@@ -1,0 +1,24 @@
+{
+  "name": "member-db-test-automation",
+  "version": "1.0.0",
+  "description": "MySQL 기반 회원 관리 DB의 데이터 품질 및 데이터 이행 결과를 검증하고,\r Python, pytest, Playwright, GitHub Actions를 활용하여 테스트를 자동화하는 QA 프로젝트입니다.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suin10100/member-db-test-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/suin10100/member-db-test-automation/issues"
+  },
+  "homepage": "https://github.com/suin10100/member-db-test-automation#readme"
+}
