@@ -116,7 +116,7 @@ def test_db_003_to_006_required_colums_reject_null(null_column):
 
     values = {
         "username": f"qa_{unique_id}",
-        "email": f"{unique_id}@eample.com",
+        "email": f"{unique_id}@example.com",
         "password": "Test1234!",
         "status": "ACTIVE",
     }
@@ -225,10 +225,13 @@ def test_db_009_invalid_status_rejected():
     try:
         connection.start_transaction()
 
-        with pytest.raises(mysql.connector.DatabaseError) as exc_info:
+        with pytest.raises(
+            mysql.connector.DatabaseError
+        ) as exc_info:
             cursor.execute(
                 """
-                INSERT INTO members (username, email, password, status, created_at)
+                INSERT INTO members
+                    (username, email, password, status, created_at)
                 VALUES (%s, %s, %s, %s, NOW())
                 """,
                 (
@@ -239,13 +242,12 @@ def test_db_009_invalid_status_rejected():
                 ),
             )
 
+        assert exc_info.value.errno == 3819
 
     finally:
         connection.rollback()
         cursor.close()
         connection.close()
-
-        assert exc_info.value.errno == 3819
 
 #TC-DB-010 username 저장 (정상 길이 검증)
 
