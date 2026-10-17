@@ -50,14 +50,30 @@ app.post("/members", async(req, res) => {
     try {
         const { username, email, password, status } = req.body;
 
-        if(!username || !email || !password || !status) {
+        // 1. 필수값 검사
+        if (!username || !email || !password || !status) {
             return res.status(400).json({
                 message: "Required fields are missing."
             });
         }
 
+        // 2. status 허용값 검사
+        const allowedStatuses = [
+            "ACTIVE",
+            "INACTIVE",
+            "SUSPENDED"
+        ];
+
+        if (!allowedStatuses.includes(status)) {
+            return res.status(400).json({
+                message: "Invalid status value."
+            });
+        }
+
+        // 3. 비밀번호 해시 처리
         const hashedPassword = await bcrypt.hash(password, 10);
 
+        // 4. DB 저장
         const [result] = await db.query(
             `INSERT INTO members
             (username, email, password, status, created_at)
