@@ -1009,196 +1009,28 @@ def test_api_027_server_status():
 
 
 
-# TC-API-028~030: 아이디 길이 경계값 검증
+# TC-API-028~030: 로그인 API 아이디 길이 경계값 검증
 
 @pytest.mark.parametrize(
-    "tc_id, username_length, expected_status",
+    "tc_id, username, password, expected_status",
     [
-        ("028", 30, 201),  # 최대 길이
-        ("029", 31, 500),  # 최대 길이 초과
-        ("030", 1, 201),   # 최소 길이
+        ("028", "abcdefghijklmnopqrstuvwxyz1234", "thritypw30!", 200),
+        ("029", "abcdefghijklmnopqrstuvwxyz12345", "thritypw30!", 401),
+        ("030", "a", "onecharpw", 200),
     ],
     ids=[
         "TC-API-028_max_length_30",
         "TC-API-029_over_max_length_31",
         "TC-API-030_min_length_1",
-    ]
+    ],
 )
 def test_api_username_length_boundary(
-    tc_id, username_length, expected_status
-):
-    unique_id = uuid.uuid4().hex
-    username = (f"a{unique_id}")[:username_length]
-    email = f"tc{tc_id}_{unique_id}@example.com"
-    member_id = None
-
-    try:
-        response = requests.post(
-            f"{BASE_URL}/members",
-            json={
-                "username": username,
-                "email": email,
-                "password": "TestPassword123!",
-                "status": "ACTIVE"
-            }
-        )
-
-        assert response.status_code == expected_status, (
-            f"TC-API-{tc_id} 실패: "
-            f"아이디 길이={username_length}, "
-            f"기대 상태 코드={expected_status}, "
-            f"실제 상태 코드={response.status_code}, "
-            f"응답={response.text}"
-        )
-
-        if expected_status == 201:
-            member_id = response.json()["user_id"]
-
-    finally:
-        if member_id is not None:
-            requests.delete(f"{BASE_URL}/members/{member_id}")
-
-
-
-# TC-API-031~033: 비밀번호 길이 경계값 검증
-@pytest.mark.parametrize(
-    "tc_id, password_length",
-    [
-        ("031", 255),
-        ("032", 256),
-        ("033", 1),
-    ],
-    ids=[
-        "TC-API-031_password_length_255",
-        "TC-API-032_password_length_256",
-        "TC-API-033_password_length_1",
-    ]
-)
-def test_api_password_length_boundary(tc_id, password_length):
-    unique_id = uuid.uuid4().hex
-    username = f"tc{tc_id}_{unique_id[:10]}"
-    email = f"tc{tc_id}_{unique_id}@example.com"
-    password = "A" * password_length
-    member_id = None
-
-    try:
-        response = requests.post(
-            f"{BASE_URL}/members",
-            json={
-                "username": username,
-                "email": email,
-                "password": password,
-                "status": "ACTIVE"
-            }
-        )
-
-        # 기존 기대 결과 유지
-        if password_length <= 255:
-            assert response.status_code == 201, (
-                f"TC-API-{tc_id} 실패: "
-                f"비밀번호 길이={password_length}, "
-                f"상태 코드={response.status_code}, "
-                f"응답={response.text}"
-            )
-
-            member_id = response.json()["user_id"]
-
-            connection = get_connection()
-            try:
-                with connection.cursor() as cursor:
-                    cursor.execute(
-                        "SELECT password FROM members WHERE user_id = %s",
-                        (member_id,)
-                    )
-                    row = cursor.fetchone()
-            finally:
-                connection.close()
-
-            assert row is not None, "DB에서 비밀번호를 찾을 수 없습니다."
-
-            stored_password = row[0]
-
-            assert stored_password != password, (
-                "비밀번호가 평문으로 저장되었습니다."
-            )
-
-            # bcrypt 검증에서 예외가 발생해도 테스트 실행 자체가
-            # 처리되지 않은 예외로 중단되지 않도록 함
-            try:
-                password_matches = bcrypt.checkpw(
-                    password.encode("utf-8"),
-                    stored_password.encode("utf-8")
-                )
-            except ValueError:
-                password_matches = False
-
-            assert password_matches, (
-                "저장된 비밀번호 해시가 입력값과 일치하지 않습니다."
-            )
-
-        else:
-            # 기존 기대 결과인 500 유지
-            assert response.status_code == 500, (
-                f"TC-API-{tc_id}: "
-                f"기대 상태 코드=500, "
-                f"실제 상태 코드={response.status_code}, "
-                f"응답={response.text}"
-            )
-
-    finally:
-        if member_id is not None:
-            requests.delete(f"{BASE_URL}/members/{member_id}")
-
-
-# TC-API-034~045: 로그인 입력값 검증
-@pytest.mark.parametrize(
-    "tc_id, username, password, expected_status",
-    [
-        # TC-API-034~035: 앞뒤 공백
-        ("034", " nonexistent_user ", "TestPassword123!", 401),
-        ("035", "nonexistent_user", " TestPassword123! ", 401),
-
-        # TC-API-036~037: 특수문자 및 유니코드
-        ("036", "user!@#$%^&*()", "TestPassword123!", 401),
-        ("037", "사용자테스트", "비밀번호테스트123!", 401),
-
-        # TC-API-038~040: 긴 입력 및 잘못된 자료형
-        ("038", "a" * 300, "TestPassword123!", 401),
-        ("039", 12345, "TestPassword123!", 401),
-        ("040", "nonexistent_user", 12345, 401),
-
-        # TC-API-041~045: null, 빈 문자열, 공백 문자열
-        ("041", None, "TestPassword123!", 400),
-        ("042", "nonexistent_user", None, 400),
-        ("043", "", "TestPassword123!", 400),
-        ("044", "nonexistent_user", "", 400),
-        ("045", "   ", "   ", 401),
-    ],
-    ids=[
-        "TC-API-034_username_surrounding_spaces",
-        "TC-API-035_password_surrounding_spaces",
-        "TC-API-036_special_characters",
-        "TC-API-037_unicode",
-        "TC-API-038_very_long_username",
-        "TC-API-039_numeric_username",
-        "TC-API-040_numeric_password",
-        "TC-API-041_null_username",
-        "TC-API-042_null_password",
-        "TC-API-043_empty_username",
-        "TC-API-044_empty_password",
-        "TC-API-045_whitespace_only",
-    ]
-)
-def test_api_login_input_validation(
     tc_id, username, password, expected_status
 ):
     response = requests.post(
         f"{BASE_URL}/auth/login",
-        json={
-            "username": username,
-            "password": password
-        },
-        timeout=5
+        json={"username": username, "password": password},
+        timeout=5,
     )
 
     assert response.status_code == expected_status, (
@@ -1206,4 +1038,139 @@ def test_api_login_input_validation(
         f"기대 상태 코드={expected_status}, "
         f"실제 상태 코드={response.status_code}, "
         f"응답={response.text}"
+    )
+
+
+# TC-API-031~033: 로그인 API 비밀번호 길이 경계값 검증
+
+TC031_PASSWORD = (
+    "AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+="
+)
+
+
+@pytest.mark.parametrize(
+    "tc_id, username, password, expected_status",
+    [
+        ("031", "tc_api_031", TC031_PASSWORD, 200),
+        ("032", "tc_api_031", TC031_PASSWORD + "1", 401),
+        ("033", "forshortpw", "!", 400),
+    ],
+    ids=[
+        "TC-API-031_password_length_225",
+        "TC-API-032_password_length_226",
+        "TC-API-033_password_length_1",
+    ],
+)
+def test_api_password_length_boundary(
+    tc_id, username, password, expected_status
+):
+    response = requests.post(
+        f"{BASE_URL}/auth/login",
+        json={"username": username, "password": password},
+        timeout=5,
+    )
+
+    assert response.status_code == expected_status, (
+        f"TC-API-{tc_id} 실패: "
+        f"기대 상태 코드={expected_status}, "
+        f"실제 상태 코드={response.status_code}, "
+        f"응답={response.text}"
+    )
+
+
+# TC-API-038: 원본의 매우 긴 비밀번호
+# 아래 문자열은 사용자가 제공한 입력값 그대로입니다.
+TC038_PASSWORD = r"""Abcdef123!@#XyZ789$%^Pass456&*()Test789!@#QwEr123$%^Login456&*()AaBbCc123!@#DdEeFf456$%^GgHhIi789&*()JjKkLl012!@#MmNnOo345$%^PpQqRr678&*()SsTtUu901!@#VvWwXx234$%^YyZzAa567&*()BbCcDd890!@#EeFfGg123$%^HhIiJj456&*()KkLlMm789!@#NnOoPp012$%^QqRrSs345&*()TtUuVv678!@#WwXxYy901$%^ZzAaBb234&*()CcDdEe567!@#FfGgHh890$%^IiJjKk123&*()LlMmNn456!@#OoPpQq789$%^RrSsTt012&*()UuVvWw345!@#XxYyZz678$%^AaBbCc901&*()DdEeFf234!@#GgHhIi567$%^JjKkLl890&*()MmNnOo123!@#PpQqRr456$%^SsTtUu789&*()VvWwXx012!@#YyZzAa345$%^BbCcDd678&*()EeFfGg901!@#HhIiJj234$%^KkLlMm567&*()NnOoPp890!@#QqRrSs123$%^TtUuVv456&*()WwXxYy789!@#ZzAaBb012$%^CcDdEe345&*()FfGgHh678!@#IiJjKk901$%^LlMmNn234&*()OoPpQq567!@#RrSsTt890$%^UuVvWw123&*()XxYyZz456!@#AaBbCc789$%^DdEeFf012&*()GgHhIi345!@#JjKkLl678$%^MmNnOo901&*()PpQqRr234!@#SsTtUu567$%^VvWwXx890&*()YyZzAa123!@#BbCcDd456$%^EeFfGg789&*()HhIiJj012!@#KkLlMm345$%^NnOoPp678&*()QqRrSs901!@#TtUuVv234$%^WwXxYy567&*()ZzAaBb890!@#CcDdEe123$%^FfGgHh456&*()IiJjKk789!@#LlMmNn012$%^OoPpQq345&*()RrSsTt678!@#UuVvWw901$%^XxYyZz234&*()AaBbCc567!@#DdEeFf890$%^GgHhIi123&*()JjKkLl456!@#MmNnOo789$%^PpQqRr012&*()SsTtUu345!@#VvWwXx678$%^YyZzAa901&*()BbCcDd234!@#EeFfGg567$%^HhIiJj890&*()KkLlMm123!@#NnOoPp456$%^QqRrSs789&*()TtUuVv012!@#WwXxYy345$%^ZzAaBb678&*()CcDdEe901!@#FfGgHh234$%^IiJjKk567&*()LlMmNn890!@#OoPpQq123$%^RrSsTt456&*()UuVvWw789!@#XxYyZz012$%^AaBbCc345&*()DdEeFf678!@#GgHhIi901$%^JjKkLl234&*()MmNnOo567!@#PpQqRr890$%^SsTtUu123&*()VvWwXx456!@#YyZzAa789$%^BbCcDd012&*()EeFfGg345!@#HhIiJj678$%^KkLlMm901&*()NnOoPp234!@#QqRrSs567$%^TtUuVv890&*()WwXxYy123!@#ZzAaBb456$%^CcDdEe789&*()FfGgHh012!@#IiJjKk345$%^LlMmNn678&*()OoPpQq901!@#RrSsTt234$%^UuVvWw567&*()XxYyZz890!@#AaBbCc123$%^DdEeFf456&*()GgHhIi789!@#JjKkLl012$%^MmNnOo345&*()PpQqRr678!@#SsTtUu901$%^VvWwXx234&*()YyZzAa567!@#BbCcDd890$%^EeFfGg123&*()HhIiJj456!@#KkLlMm789$%^NnOoPp012&*()QqRrSs345!@#TtUuVv678$%^WwXxYy901&*()ZzAaBb234!@#CcDdEe567$%^FfGgHh890&*()IiJjKk123!@#LlMmNn456$%^OoPpQq789&*()RrSsTt012!@#UuVvWw345$%^XxYyZz678&*()AaBbCc901!@#DdEeFf234$%^GgHhIi567&*()JjKkLl890!@#MmNnOo123$%^PpQqRr456&*()SsTtUu789!@#VvWwXx012$%^YyZzAa345&*()BbCcDd678!@#EeFfGg901$%^HhIiJj234&*()KkLlMm567!@#NnOoPp890$%^QqRrSs123&*()TtUuVv456!@#WwXxYy789$%^ZzAaBb012&*()CcDdEe345!@#FfGgHh678$%^IiJjKk901&*()LlMmNn234!@#OoPpQq567$%^RrSsTt890&*()UuVvWw123!@#XxYyZz456$%^AaBbCc789&*()DdEeFf012!@#GgHhIi345$%^JjKkLl678&*()MmNnOo901!@#PpQqRr234$%^SsTtUu567&*()VvWwXx890!@#YyZzAa123$%^BbCcDd456&*()EeFfGg789!@#HhIiJj012$%^KkLlMm345&*()NnOoPp678!@#QqRrSs901$%^TtUuVv234&*()WwXxY"""
+
+
+# TC-API-034~045: 로그인 입력값 검증
+
+OMIT_PASSWORD = object()
+
+
+@pytest.mark.parametrize(
+    "tc_id, username, password, expected_status",
+    [
+        # TC-API-034~035: 앞뒤 공백
+        ("034", " test01 ", "Test1234!\\", 401),
+        ("035", "test01", " Test1234! ", 401),
+
+        # TC-API-036~037: 특수문자 및 유니코드
+        ("036", r"@#!\~!@1234", OMIT_PASSWORD, 400),
+        ("037", "ㄱㅇ☺️", OMIT_PASSWORD, 400),
+
+        # TC-API-039~040: 잘못된 자료형
+        ("039", ["testuster"], "Test1234!", 401),
+        ("040", "test01", ["testusterpw"], 401),
+
+        # TC-API-041~045: null, 빈 문자열, 공백 문자열
+        ("041", None, "Test1234!", 400),
+        ("042", "test02", None, 400),
+        ("043", "", "Test1234!", 400),
+        ("044", "test01", "", 400),
+        ("045", "   ", "   ", 401),
+    ],
+    ids=[
+        "TC-API-034_username_surrounding_spaces",
+        "TC-API-035_password_surrounding_spaces",
+        "TC-API-036_special_characters",
+        "TC-API-037_unicode",
+        "TC-API-039_invalid_username_type",
+        "TC-API-040_invalid_password_type",
+        "TC-API-041_null_username",
+        "TC-API-042_null_password",
+        "TC-API-043_empty_username",
+        "TC-API-044_empty_password",
+        "TC-API-045_whitespace_only",
+    ],
+)
+def test_api_login_input_validation(
+    tc_id, username, password, expected_status
+):
+    payload = {"username": username}
+
+    if password is not OMIT_PASSWORD:
+        payload["password"] = password
+
+    response = requests.post(
+        f"{BASE_URL}/auth/login",
+        json=payload,
+        timeout=5,
+    )
+
+    assert response.status_code == expected_status, (
+        f"TC-API-{tc_id} 실패: "
+        f"기대 상태 코드={expected_status}, "
+        f"실제 상태 코드={response.status_code}, "
+        f"응답={response.text}"
+    )
+
+
+# TC-API-038: 매우 긴 비밀번호 입력 시 서버가 중단되지 않는지 확인
+def test_api_038_very_long_password_does_not_crash_server():
+    response = requests.post(
+        f"{BASE_URL}/auth/login",
+        json={
+            "username": "test01",
+            "password": TC038_PASSWORD,
+        },
+        timeout=10,
+    )
+
+    # 이 TC의 핵심은 특정 인증 성공 여부가 아니라 서버 오류로
+    # 중단되지 않고 요청에 응답하는지 확인하는 것입니다.
+    assert response.status_code < 500, (
+        "TC-API-038 실패: 서버가 5xx 오류를 반환했습니다. "
+        f"상태 코드={response.status_code}, 응답={response.text}"
+    )
+
+    health_response = requests.get(
+        f"{BASE_URL}/",
+        timeout=5,
+    )
+
+    assert health_response.status_code < 500, (
+        "TC-API-038 실패: 요청 후 서버가 정상 응답하지 않습니다. "
+        f"상태 코드={health_response.status_code}, "
+        f"응답={health_response.text}"
     )
