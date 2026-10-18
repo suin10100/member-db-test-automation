@@ -232,37 +232,7 @@ def test_db_009_invalid_status_rejected():
         cursor.close()
         connection.close()
 
-
-# TC-DB-010: username 저장 (최대 길이 초과 검증)
-def test_db_010_username_exceeds_max_length_rejected():
-    connection = get_connection()
-    cursor = connection.cursor()
-    unique_id = uuid.uuid4().hex[:12]
-
-    try:
-        connection.start_transaction()
-
-        with pytest.raises(mysql.connector.DataError):
-            cursor.execute(
-                """
-                INSERT INTO members (username, email, password, status, created_at)
-                VALUES (%s, %s, %s, %s, NOW())
-                """,
-                (
-                    "a" * 31,
-                    f"{unique_id}@example.com",
-                    "Test1234!",
-                    "ACTIVE",
-                ),
-            )
-
-    finally:
-        connection.rollback()
-        cursor.close()
-        connection.close()
-
-
-# TC-DB-011: username 저장 (최대 길이 검증)
+# TC-DB-010: username 저장 (정상 길이 검증)
 def test_db_011_username_max_length_saved():
     connection = get_connection()
     cursor = connection.cursor()
@@ -297,6 +267,34 @@ def test_db_011_username_max_length_saved():
         cursor.close()
         connection.close()
 
+
+# TC-DB-011: username 저장 (최대 길이 초과 검증)
+def test_db_011_username_exceeds_max_length_rejected():
+    connection = get_connection()
+    cursor = connection.cursor()
+    unique_id = uuid.uuid4().hex[:12]
+
+    try:
+        connection.start_transaction()
+
+        with pytest.raises(mysql.connector.DataError):
+            cursor.execute(
+                """
+                INSERT INTO members (username, email, password, status, created_at)
+                VALUES (%s, %s, %s, %s, NOW())
+                """,
+                (
+                    "a" * 31,
+                    f"{unique_id}@example.com",
+                    "Test1234!",
+                    "ACTIVE",
+                ),
+            )
+
+    finally:
+        connection.rollback()
+        cursor.close()
+        connection.close()
 
 # TC-DB-012: user_profiles 저장 (존재하지 않는 회원 참조 차단)
 def test_db_012_profile_rejects_nonexistent_member():
