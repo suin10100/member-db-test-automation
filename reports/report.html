@@ -1,0 +1,2603 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://localhost:8000/report.html?utm_source=chatgpt.com&sort=result -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title id="head-title">report.html</title>
+      <link href="./report_files/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 18-Oct-2026 at 23:30:58 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment">
+      <tr>
+        <td>Python</td>
+        <td><div>3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]</div></td>
+      </tr>
+    
+      <tr>
+        <td>Platform</td>
+        <td><div>Windows-11-10.0.26200-SP0</div></td>
+      </tr>
+    
+      <tr>
+        <td>Packages</td>
+        <td><ul><li>pytest: 9.1.1</li><li>pluggy: 1.6.0</li><ul></ul></ul></td>
+      </tr>
+    
+      <tr>
+        <td>Plugins</td>
+        <td><ul><li>html: 4.2.0</li><li>metadata: 3.1.1</li><ul></ul></ul></td>
+      </tr>
+    
+      <tr>
+        <td>Architecture</td>
+        <td><div>AMD64</div></td>
+      </tr>
+    </table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row"></template>
+    <template id="template_results-table__body--empty"></template>
+    <template id="template_results-table__tbody"></template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">61 tests took 00:00:08.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br>Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed">
+            <span class="failed">3 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed">
+            <span class="passed">58 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled="">
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled="">
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled="">
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled="">
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled="">
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled="">
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table"><thead id="results-table-head">
+        <tr>
+          <th class="sortable asc" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody class="results-table-row failed" id="test/api/test_members_api.py::test_api_password_length_boundary[TC-API-032_password_length_226]">
+        <tr class="collapsible" data-id="test_31">
+        <td class="col-result">Failed</td><td class="col-testId">test/api/test_members_api.py::test_api_password_length_boundary[TC-API-032_password_length_226]</td><td class="col-duration">128 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">tc_id = '032', username = 'tc_api_031'
+password = 'AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;*()_+=1'
+expected_status = 401
+
+    @pytest.mark.parametrize(
+        "tc_id, username, password, expected_status",
+        [
+            ("031", "tc_api_031", TC031_PASSWORD, 200),
+            ("032", "tc_api_031", TC031_PASSWORD + "1", 401),
+            ("033", "forshortpw", "!", 400),
+        ],
+        ids=[
+            "TC-API-031_password_length_225",
+            "TC-API-032_password_length_226",
+            "TC-API-033_password_length_1",
+        ],
+    )
+    def test_api_password_length_boundary(
+        tc_id, username, password, expected_status
+    ):
+        response = requests.post(
+            f"{BASE_URL}/auth/login",
+            json={"username": username, "password": password},
+            timeout=5,
+        )
+    
+&gt;       assert response.status_code == expected_status, (
+            f"TC-API-{tc_id} 실패: "
+            f"기대 상태 코드={expected_status}, "
+            f"실제 상태 코드={response.status_code}, "
+            f"응답={response.text}"
+        )
+<span class="error">E       AssertionError: TC-API-032 실패: 기대 상태 코드=401, 실제 상태 코드=200, 응답={"message":"Login successful.","user":{"user_id":659,"username":"tc_api_031","email":"tc_api_031@example.com","status":"ACTIVE"}}</span>
+<span class="error">E       assert 200 == 401</span>
+<span class="error">E        +  where 200 = &lt;Response [200]&gt;.status_code</span>
+
+test\api\test_members_api.py:1073: AssertionError
+</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row failed" id="test/api/test_members_api.py::test_api_password_length_boundary[TC-API-033_password_length_1]">
+        <tr class="collapsible" data-id="test_32">
+        <td class="col-result">Failed</td><td class="col-testId">test/api/test_members_api.py::test_api_password_length_boundary[TC-API-033_password_length_1]</td><td class="col-duration">423 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">tc_id = '033', username = 'forshortpw', password = '!', expected_status = 400
+
+    @pytest.mark.parametrize(
+        "tc_id, username, password, expected_status",
+        [
+            ("031", "tc_api_031", TC031_PASSWORD, 200),
+            ("032", "tc_api_031", TC031_PASSWORD + "1", 401),
+            ("033", "forshortpw", "!", 400),
+        ],
+        ids=[
+            "TC-API-031_password_length_225",
+            "TC-API-032_password_length_226",
+            "TC-API-033_password_length_1",
+        ],
+    )
+    def test_api_password_length_boundary(
+        tc_id, username, password, expected_status
+    ):
+        response = requests.post(
+            f"{BASE_URL}/auth/login",
+            json={"username": username, "password": password},
+            timeout=5,
+        )
+    
+&gt;       assert response.status_code == expected_status, (
+            f"TC-API-{tc_id} 실패: "
+            f"기대 상태 코드={expected_status}, "
+            f"실제 상태 코드={response.status_code}, "
+            f"응답={response.text}"
+        )
+<span class="error">E       AssertionError: TC-API-033 실패: 기대 상태 코드=400, 실제 상태 코드=200, 응답={"message":"Login successful.","user":{"user_id":479,"username":"forshortpw","email":"tc_api_forshortpw@example.com","status":"ACTIVE"}}</span>
+<span class="error">E       assert 200 == 400</span>
+<span class="error">E        +  where 200 = &lt;Response [200]&gt;.status_code</span>
+
+test\api\test_members_api.py:1073: AssertionError
+</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row failed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-040_invalid_password_type]">
+        <tr class="collapsible" data-id="test_38">
+        <td class="col-result">Failed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-040_invalid_password_type]</td><td class="col-duration">30 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">tc_id = '040', username = 'test01', password = ['testusterpw'], expected_status = 401
+
+    @pytest.mark.parametrize(
+        "tc_id, username, password, expected_status",
+        [
+            # TC-API-034~035: 앞뒤 공백
+            ("034", " test01 ", "Test1234!\\", 401),
+            ("035", "test01", " Test1234! ", 401),
+    
+            # TC-API-036~037: 특수문자 및 유니코드
+            ("036", r"@#!\~!@1234", OMIT_PASSWORD, 400),
+            ("037", "ㄱㅇ☺️", OMIT_PASSWORD, 400),
+    
+            # TC-API-039~040: 잘못된 자료형
+            ("039", ["testuster"], "Test1234!", 401),
+            ("040", "test01", ["testusterpw"], 401),
+    
+            # TC-API-041~045: null, 빈 문자열, 공백 문자열
+            ("041", None, "Test1234!", 400),
+            ("042", "test02", None, 400),
+            ("043", "", "Test1234!", 400),
+            ("044", "test01", "", 400),
+            ("045", "   ", "   ", 401),
+        ],
+        ids=[
+            "TC-API-034_username_surrounding_spaces",
+            "TC-API-035_password_surrounding_spaces",
+            "TC-API-036_special_characters",
+            "TC-API-037_unicode",
+            "TC-API-039_invalid_username_type",
+            "TC-API-040_invalid_password_type",
+            "TC-API-041_null_username",
+            "TC-API-042_null_password",
+            "TC-API-043_empty_username",
+            "TC-API-044_empty_password",
+            "TC-API-045_whitespace_only",
+        ],
+    )
+    def test_api_login_input_validation(
+        tc_id, username, password, expected_status
+    ):
+        payload = {"username": username}
+    
+        if password is not OMIT_PASSWORD:
+            payload["password"] = password
+    
+        response = requests.post(
+            f"{BASE_URL}/auth/login",
+            json=payload,
+            timeout=5,
+        )
+    
+&gt;       assert response.status_code == expected_status, (
+            f"TC-API-{tc_id} 실패: "
+            f"기대 상태 코드={expected_status}, "
+            f"실제 상태 코드={response.status_code}, "
+            f"응답={response.text}"
+        )
+<span class="error">E       AssertionError: TC-API-040 실패: 기대 상태 코드=401, 실제 상태 코드=500, 응답={"message":"Database error."}</span>
+<span class="error">E       assert 500 == 401</span>
+<span class="error">E        +  where 500 = &lt;Response [500]&gt;.status_code</span>
+
+test\api\test_members_api.py:1141: AssertionError
+</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_001_create_member_success">
+        <tr class="collapsible" data-id="test_0">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_001_create_member_success</td><td class="col-duration">215 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_002_create_member_db_persistence">
+        <tr class="collapsible" data-id="test_1">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_002_create_member_db_persistence</td><td class="col-duration">184 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-003_missing_username]">
+        <tr class="collapsible" data-id="test_2">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-003_missing_username]</td><td class="col-duration">8 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-004_missing_email]">
+        <tr class="collapsible" data-id="test_3">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-004_missing_email]</td><td class="col-duration">9 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-005_missing_password]">
+        <tr class="collapsible" data-id="test_4">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-005_missing_password]</td><td class="col-duration">9 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-006_missing_status]">
+        <tr class="collapsible" data-id="test_5">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-006_missing_status]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-007_duplicate_username]">
+        <tr class="collapsible" data-id="test_6">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-007_duplicate_username]</td><td class="col-duration">119 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-008_duplicate_email]">
+        <tr class="collapsible" data-id="test_7">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-008_duplicate_email]</td><td class="col-duration">113 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_009_password_is_hashed_in_database">
+        <tr class="collapsible" data-id="test_8">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_009_password_is_hashed_in_database</td><td class="col-duration">271 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_010_create_member_rejects_invalid_status">
+        <tr class="collapsible" data-id="test_9">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_010_create_member_rejects_invalid_status</td><td class="col-duration">74 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-011_login_success]">
+        <tr class="collapsible" data-id="test_10">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-011_login_success]</td><td class="col-duration">408 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-012_wrong_password]">
+        <tr class="collapsible" data-id="test_11">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-012_wrong_password]</td><td class="col-duration">413 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-013_unknown_username]">
+        <tr class="collapsible" data-id="test_12">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-013_unknown_username]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-014_inactive_account]">
+        <tr class="collapsible" data-id="test_13">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-014_inactive_account]</td><td class="col-duration">11 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-015_suspended_account]">
+        <tr class="collapsible" data-id="test_14">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-015_suspended_account]</td><td class="col-duration">11 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-016_missing_username]">
+        <tr class="collapsible" data-id="test_15">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-016_missing_username]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_011_017_login_api[TC-API-017_missing_password]">
+        <tr class="collapsible" data-id="test_16">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_011_017_login_api[TC-API-017_missing_password]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_018_get_nonexistent_member">
+        <tr class="collapsible" data-id="test_17">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_018_get_nonexistent_member</td><td class="col-duration">72 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_019_update_nonexistent_member">
+        <tr class="collapsible" data-id="test_18">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_019_update_nonexistent_member</td><td class="col-duration">173 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_020_delete_nonexistent_member">
+        <tr class="collapsible" data-id="test_19">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_020_delete_nonexistent_member</td><td class="col-duration">66 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_021_update_member_success">
+        <tr class="collapsible" data-id="test_20">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_021_update_member_success</td><td class="col-duration">305 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_022_update_password_is_hashed">
+        <tr class="collapsible" data-id="test_21">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_022_update_password_is_hashed</td><td class="col-duration">367 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_023_delete_member_success">
+        <tr class="collapsible" data-id="test_22">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_023_delete_member_success</td><td class="col-duration">167 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_024_delete_member_related_records">
+        <tr class="collapsible" data-id="test_23">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_024_delete_member_related_records</td><td class="col-duration">240 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_025_get_member_success">
+        <tr class="collapsible" data-id="test_24">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_025_get_member_success</td><td class="col-duration">136 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_026_get_all_members">
+        <tr class="collapsible" data-id="test_25">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_026_get_all_members</td><td class="col-duration">121 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_027_server_status">
+        <tr class="collapsible" data-id="test_26">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_027_server_status</td><td class="col-duration">24 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_username_length_boundary[TC-API-028_max_length_30]">
+        <tr class="collapsible" data-id="test_27">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_username_length_boundary[TC-API-028_max_length_30]</td><td class="col-duration">424 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_username_length_boundary[TC-API-029_over_max_length_31]">
+        <tr class="collapsible" data-id="test_28">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_username_length_boundary[TC-API-029_over_max_length_31]</td><td class="col-duration">8 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_username_length_boundary[TC-API-030_min_length_1]">
+        <tr class="collapsible" data-id="test_29">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_username_length_boundary[TC-API-030_min_length_1]</td><td class="col-duration">407 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_password_length_boundary[TC-API-031_password_length_225]">
+        <tr class="collapsible" data-id="test_30">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_password_length_boundary[TC-API-031_password_length_225]</td><td class="col-duration">113 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-034_username_surrounding_spaces]">
+        <tr class="collapsible" data-id="test_33">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-034_username_surrounding_spaces]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-035_password_surrounding_spaces]">
+        <tr class="collapsible" data-id="test_34">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-035_password_surrounding_spaces]</td><td class="col-duration">440 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-036_special_characters]">
+        <tr class="collapsible" data-id="test_35">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-036_special_characters]</td><td class="col-duration">6 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-037_unicode]">
+        <tr class="collapsible" data-id="test_36">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-037_unicode]</td><td class="col-duration">7 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-039_invalid_username_type]">
+        <tr class="collapsible" data-id="test_37">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-039_invalid_username_type]</td><td class="col-duration">33 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-041_null_username]">
+        <tr class="collapsible" data-id="test_39">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-041_null_username]</td><td class="col-duration">31 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-042_null_password]">
+        <tr class="collapsible" data-id="test_40">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-042_null_password]</td><td class="col-duration">29 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-043_empty_username]">
+        <tr class="collapsible" data-id="test_41">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-043_empty_username]</td><td class="col-duration">27 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-044_empty_password]">
+        <tr class="collapsible" data-id="test_42">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-044_empty_password]</td><td class="col-duration">29 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_login_input_validation[TC-API-045_whitespace_only]">
+        <tr class="collapsible" data-id="test_43">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_login_input_validation[TC-API-045_whitespace_only]</td><td class="col-duration">33 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/api/test_members_api.py::test_api_038_very_long_password_does_not_crash_server">
+        <tr class="collapsible" data-id="test_44">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/api/test_members_api.py::test_api_038_very_long_password_does_not_crash_server</td><td class="col-duration">362 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::testdb_001_duplicate_username_rejected">
+        <tr class="collapsible" data-id="test_45">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::testdb_001_duplicate_username_rejected</td><td class="col-duration">64 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_002_duplicate_email_rejected">
+        <tr class="collapsible" data-id="test_46">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_002_duplicate_email_rejected</td><td class="col-duration">55 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[username]">
+        <tr class="collapsible" data-id="test_47">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[username]</td><td class="col-duration">46 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[email]">
+        <tr class="collapsible" data-id="test_48">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[email]</td><td class="col-duration">62 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[password]">
+        <tr class="collapsible" data-id="test_49">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[password]</td><td class="col-duration">60 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[status]">
+        <tr class="collapsible" data-id="test_50">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[status]</td><td class="col-duration">61 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_007_created_at_null_rejected">
+        <tr class="collapsible" data-id="test_51">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_007_created_at_null_rejected</td><td class="col-duration">63 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_008_allowed_status_values_saved[ACTIVE]">
+        <tr class="collapsible" data-id="test_52">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_008_allowed_status_values_saved[ACTIVE]</td><td class="col-duration">67 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_008_allowed_status_values_saved[INACTIVE]">
+        <tr class="collapsible" data-id="test_53">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_008_allowed_status_values_saved[INACTIVE]</td><td class="col-duration">61 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_008_allowed_status_values_saved[SUSPENDED]">
+        <tr class="collapsible" data-id="test_54">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_008_allowed_status_values_saved[SUSPENDED]</td><td class="col-duration">61 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_009_invalid_status_rejected">
+        <tr class="collapsible" data-id="test_55">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_009_invalid_status_rejected</td><td class="col-duration">59 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_010_username_exceeds_max_length_rejected">
+        <tr class="collapsible" data-id="test_56">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_010_username_exceeds_max_length_rejected</td><td class="col-duration">63 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_011_username_max_length_saved">
+        <tr class="collapsible" data-id="test_57">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_011_username_max_length_saved</td><td class="col-duration">62 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_012_profile_rejects_nonexistent_member">
+        <tr class="collapsible" data-id="test_58">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_012_profile_rejects_nonexistent_member</td><td class="col-duration">62 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members.py::test_db_013_login_history_rejects_nonexistent_member">
+        <tr class="collapsible" data-id="test_59">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members.py::test_db_013_login_history_rejects_nonexistent_member</td><td class="col-duration">63 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">No log output captured.</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    
+      <tbody class="results-table-row passed" id="test/db/test_members_data.py::test_member_count">
+        <tr class="collapsible" data-id="test_60">
+        <td class="col-result collapsed">Passed</td><td class="col-testId">test/db/test_members_data.py::test_member_count</td><td class="col-duration">74 ms</td><td class="col-links"></td></tr>
+        <tr class="extras-row hidden">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media hidden">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="http://localhost:8000/report.html?utm_source=chatgpt.com&amp;sort=result">
+                    <video controls="">
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log">----------------------------- Captured stdout call -----------------------------
+① DB 연결 시작
+② DB 연결 성공
+</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&quot;environment&quot;: {&quot;Python&quot;: &quot;3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]&quot;, &quot;Platform&quot;: &quot;Windows-11-10.0.26200-SP0&quot;, &quot;Packages&quot;: {&quot;pytest&quot;: &quot;9.1.1&quot;, &quot;pluggy&quot;: &quot;1.6.0&quot;}, &quot;Plugins&quot;: {&quot;html&quot;: &quot;4.2.0&quot;, &quot;metadata&quot;: &quot;3.1.1&quot;}, &quot;Architecture&quot;: &quot;AMD64&quot;}, &quot;tests&quot;: {&quot;test/api/test_members_api.py::test_api_001_create_member_success&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_001_create_member_success&quot;, &quot;duration&quot;: &quot;215 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_001_create_member_success&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;215 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_002_create_member_db_persistence&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_002_create_member_db_persistence&quot;, &quot;duration&quot;: &quot;184 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_002_create_member_db_persistence&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;184 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-003_missing_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-003_missing_username]&quot;, &quot;duration&quot;: &quot;8 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-003_missing_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;8 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-004_missing_email]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-004_missing_email]&quot;, &quot;duration&quot;: &quot;9 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-004_missing_email]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;9 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-005_missing_password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-005_missing_password]&quot;, &quot;duration&quot;: &quot;9 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-005_missing_password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;9 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-006_missing_status]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-006_missing_status]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_003_006_create_member_rejects_missing_required_fields[TC-API-006_missing_status]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-007_duplicate_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-007_duplicate_username]&quot;, &quot;duration&quot;: &quot;119 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-007_duplicate_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;119 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-008_duplicate_email]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-008_duplicate_email]&quot;, &quot;duration&quot;: &quot;113 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_007_008_create_member_rejects_duplicate_data[TC-API-008_duplicate_email]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;113 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_009_password_is_hashed_in_database&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_009_password_is_hashed_in_database&quot;, &quot;duration&quot;: &quot;271 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_009_password_is_hashed_in_database&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;271 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_010_create_member_rejects_invalid_status&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_010_create_member_rejects_invalid_status&quot;, &quot;duration&quot;: &quot;74 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_010_create_member_rejects_invalid_status&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;74 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-011_login_success]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-011_login_success]&quot;, &quot;duration&quot;: &quot;408 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-011_login_success]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;408 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-012_wrong_password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-012_wrong_password]&quot;, &quot;duration&quot;: &quot;413 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-012_wrong_password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;413 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-013_unknown_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-013_unknown_username]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-013_unknown_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-014_inactive_account]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-014_inactive_account]&quot;, &quot;duration&quot;: &quot;11 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-014_inactive_account]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;11 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-015_suspended_account]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-015_suspended_account]&quot;, &quot;duration&quot;: &quot;11 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-015_suspended_account]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;11 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-016_missing_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-016_missing_username]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-016_missing_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-017_missing_password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-017_missing_password]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_011_017_login_api[TC-API-017_missing_password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_018_get_nonexistent_member&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_018_get_nonexistent_member&quot;, &quot;duration&quot;: &quot;72 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_018_get_nonexistent_member&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;72 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_019_update_nonexistent_member&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_019_update_nonexistent_member&quot;, &quot;duration&quot;: &quot;173 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_019_update_nonexistent_member&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;173 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_020_delete_nonexistent_member&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_020_delete_nonexistent_member&quot;, &quot;duration&quot;: &quot;66 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_020_delete_nonexistent_member&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;66 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_021_update_member_success&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_021_update_member_success&quot;, &quot;duration&quot;: &quot;305 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_021_update_member_success&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;305 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_022_update_password_is_hashed&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_022_update_password_is_hashed&quot;, &quot;duration&quot;: &quot;367 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_022_update_password_is_hashed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;367 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_023_delete_member_success&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_023_delete_member_success&quot;, &quot;duration&quot;: &quot;167 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_023_delete_member_success&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;167 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_024_delete_member_related_records&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_024_delete_member_related_records&quot;, &quot;duration&quot;: &quot;240 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_024_delete_member_related_records&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;240 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_025_get_member_success&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_025_get_member_success&quot;, &quot;duration&quot;: &quot;136 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_025_get_member_success&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;136 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_026_get_all_members&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_026_get_all_members&quot;, &quot;duration&quot;: &quot;121 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_026_get_all_members&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;121 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_027_server_status&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_027_server_status&quot;, &quot;duration&quot;: &quot;24 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_027_server_status&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;24 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-028_max_length_30]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-028_max_length_30]&quot;, &quot;duration&quot;: &quot;424 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-028_max_length_30]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;424 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-029_over_max_length_31]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-029_over_max_length_31]&quot;, &quot;duration&quot;: &quot;8 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-029_over_max_length_31]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;8 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-030_min_length_1]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-030_min_length_1]&quot;, &quot;duration&quot;: &quot;407 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_username_length_boundary[TC-API-030_min_length_1]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;407 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-031_password_length_225]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-031_password_length_225]&quot;, &quot;duration&quot;: &quot;113 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-031_password_length_225]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;113 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-032_password_length_226]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Failed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-032_password_length_226]&quot;, &quot;duration&quot;: &quot;128 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Failed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-032_password_length_226]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;128 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;tc_id = &amp;#x27;032&amp;#x27;, username = &amp;#x27;tc_api_031&amp;#x27;\npassword = &amp;#x27;AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;amp;*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;amp;*()_+=AbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&amp;amp;*()_+=1&amp;#x27;\nexpected_status = 401\n\n    @pytest.mark.parametrize(\n        &amp;quot;tc_id, username, password, expected_status&amp;quot;,\n        [\n            (&amp;quot;031&amp;quot;, &amp;quot;tc_api_031&amp;quot;, TC031_PASSWORD, 200),\n            (&amp;quot;032&amp;quot;, &amp;quot;tc_api_031&amp;quot;, TC031_PASSWORD + &amp;quot;1&amp;quot;, 401),\n            (&amp;quot;033&amp;quot;, &amp;quot;forshortpw&amp;quot;, &amp;quot;!&amp;quot;, 400),\n        ],\n        ids=[\n            &amp;quot;TC-API-031_password_length_225&amp;quot;,\n            &amp;quot;TC-API-032_password_length_226&amp;quot;,\n            &amp;quot;TC-API-033_password_length_1&amp;quot;,\n        ],\n    )\n    def test_api_password_length_boundary(\n        tc_id, username, password, expected_status\n    ):\n        response = requests.post(\n            f&amp;quot;{BASE_URL}/auth/login&amp;quot;,\n            json={&amp;quot;username&amp;quot;: username, &amp;quot;password&amp;quot;: password},\n            timeout=5,\n        )\n    \n&amp;gt;       assert response.status_code == expected_status, (\n            f&amp;quot;TC-API-{tc_id} \uc2e4\ud328: &amp;quot;\n            f&amp;quot;\uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc={expected_status}, &amp;quot;\n            f&amp;quot;\uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc={response.status_code}, &amp;quot;\n            f&amp;quot;\uc751\ub2f5={response.text}&amp;quot;\n        )\nE       AssertionError: TC-API-032 \uc2e4\ud328: \uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc=401, \uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc=200, \uc751\ub2f5={&amp;quot;message&amp;quot;:&amp;quot;Login successful.&amp;quot;,&amp;quot;user&amp;quot;:{&amp;quot;user_id&amp;quot;:659,&amp;quot;username&amp;quot;:&amp;quot;tc_api_031&amp;quot;,&amp;quot;email&amp;quot;:&amp;quot;tc_api_031@example.com&amp;quot;,&amp;quot;status&amp;quot;:&amp;quot;ACTIVE&amp;quot;}}\nE       assert 200 == 401\nE        +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntest\\api\\test_members_api.py:1073: AssertionError\n&quot;}], &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-033_password_length_1]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Failed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-033_password_length_1]&quot;, &quot;duration&quot;: &quot;423 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Failed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_password_length_boundary[TC-API-033_password_length_1]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;423 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;tc_id = &amp;#x27;033&amp;#x27;, username = &amp;#x27;forshortpw&amp;#x27;, password = &amp;#x27;!&amp;#x27;, expected_status = 400\n\n    @pytest.mark.parametrize(\n        &amp;quot;tc_id, username, password, expected_status&amp;quot;,\n        [\n            (&amp;quot;031&amp;quot;, &amp;quot;tc_api_031&amp;quot;, TC031_PASSWORD, 200),\n            (&amp;quot;032&amp;quot;, &amp;quot;tc_api_031&amp;quot;, TC031_PASSWORD + &amp;quot;1&amp;quot;, 401),\n            (&amp;quot;033&amp;quot;, &amp;quot;forshortpw&amp;quot;, &amp;quot;!&amp;quot;, 400),\n        ],\n        ids=[\n            &amp;quot;TC-API-031_password_length_225&amp;quot;,\n            &amp;quot;TC-API-032_password_length_226&amp;quot;,\n            &amp;quot;TC-API-033_password_length_1&amp;quot;,\n        ],\n    )\n    def test_api_password_length_boundary(\n        tc_id, username, password, expected_status\n    ):\n        response = requests.post(\n            f&amp;quot;{BASE_URL}/auth/login&amp;quot;,\n            json={&amp;quot;username&amp;quot;: username, &amp;quot;password&amp;quot;: password},\n            timeout=5,\n        )\n    \n&amp;gt;       assert response.status_code == expected_status, (\n            f&amp;quot;TC-API-{tc_id} \uc2e4\ud328: &amp;quot;\n            f&amp;quot;\uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc={expected_status}, &amp;quot;\n            f&amp;quot;\uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc={response.status_code}, &amp;quot;\n            f&amp;quot;\uc751\ub2f5={response.text}&amp;quot;\n        )\nE       AssertionError: TC-API-033 \uc2e4\ud328: \uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc=400, \uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc=200, \uc751\ub2f5={&amp;quot;message&amp;quot;:&amp;quot;Login successful.&amp;quot;,&amp;quot;user&amp;quot;:{&amp;quot;user_id&amp;quot;:479,&amp;quot;username&amp;quot;:&amp;quot;forshortpw&amp;quot;,&amp;quot;email&amp;quot;:&amp;quot;tc_api_forshortpw@example.com&amp;quot;,&amp;quot;status&amp;quot;:&amp;quot;ACTIVE&amp;quot;}}\nE       assert 200 == 400\nE        +  where 200 = &amp;lt;Response [200]&amp;gt;.status_code\n\ntest\\api\\test_members_api.py:1073: AssertionError\n&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-034_username_surrounding_spaces]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-034_username_surrounding_spaces]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-034_username_surrounding_spaces]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-035_password_surrounding_spaces]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-035_password_surrounding_spaces]&quot;, &quot;duration&quot;: &quot;440 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-035_password_surrounding_spaces]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;440 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-036_special_characters]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-036_special_characters]&quot;, &quot;duration&quot;: &quot;6 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-036_special_characters]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;6 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-037_unicode]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-037_unicode]&quot;, &quot;duration&quot;: &quot;7 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-037_unicode]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;7 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-039_invalid_username_type]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-039_invalid_username_type]&quot;, &quot;duration&quot;: &quot;33 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-039_invalid_username_type]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;33 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-040_invalid_password_type]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Failed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-040_invalid_password_type]&quot;, &quot;duration&quot;: &quot;30 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Failed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-040_invalid_password_type]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;30 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;tc_id = &amp;#x27;040&amp;#x27;, username = &amp;#x27;test01&amp;#x27;, password = [&amp;#x27;testusterpw&amp;#x27;], expected_status = 401\n\n    @pytest.mark.parametrize(\n        &amp;quot;tc_id, username, password, expected_status&amp;quot;,\n        [\n            # TC-API-034~035: \uc55e\ub4a4 \uacf5\ubc31\n            (&amp;quot;034&amp;quot;, &amp;quot; test01 &amp;quot;, &amp;quot;Test1234!\\\\&amp;quot;, 401),\n            (&amp;quot;035&amp;quot;, &amp;quot;test01&amp;quot;, &amp;quot; Test1234! &amp;quot;, 401),\n    \n            # TC-API-036~037: \ud2b9\uc218\ubb38\uc790 \ubc0f \uc720\ub2c8\ucf54\ub4dc\n            (&amp;quot;036&amp;quot;, r&amp;quot;@#!\\~!@1234&amp;quot;, OMIT_PASSWORD, 400),\n            (&amp;quot;037&amp;quot;, &amp;quot;\u3131\u3147\u263a\ufe0f&amp;quot;, OMIT_PASSWORD, 400),\n    \n            # TC-API-039~040: \uc798\ubabb\ub41c \uc790\ub8cc\ud615\n            (&amp;quot;039&amp;quot;, [&amp;quot;testuster&amp;quot;], &amp;quot;Test1234!&amp;quot;, 401),\n            (&amp;quot;040&amp;quot;, &amp;quot;test01&amp;quot;, [&amp;quot;testusterpw&amp;quot;], 401),\n    \n            # TC-API-041~045: null, \ube48 \ubb38\uc790\uc5f4, \uacf5\ubc31 \ubb38\uc790\uc5f4\n            (&amp;quot;041&amp;quot;, None, &amp;quot;Test1234!&amp;quot;, 400),\n            (&amp;quot;042&amp;quot;, &amp;quot;test02&amp;quot;, None, 400),\n            (&amp;quot;043&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Test1234!&amp;quot;, 400),\n            (&amp;quot;044&amp;quot;, &amp;quot;test01&amp;quot;, &amp;quot;&amp;quot;, 400),\n            (&amp;quot;045&amp;quot;, &amp;quot;   &amp;quot;, &amp;quot;   &amp;quot;, 401),\n        ],\n        ids=[\n            &amp;quot;TC-API-034_username_surrounding_spaces&amp;quot;,\n            &amp;quot;TC-API-035_password_surrounding_spaces&amp;quot;,\n            &amp;quot;TC-API-036_special_characters&amp;quot;,\n            &amp;quot;TC-API-037_unicode&amp;quot;,\n            &amp;quot;TC-API-039_invalid_username_type&amp;quot;,\n            &amp;quot;TC-API-040_invalid_password_type&amp;quot;,\n            &amp;quot;TC-API-041_null_username&amp;quot;,\n            &amp;quot;TC-API-042_null_password&amp;quot;,\n            &amp;quot;TC-API-043_empty_username&amp;quot;,\n            &amp;quot;TC-API-044_empty_password&amp;quot;,\n            &amp;quot;TC-API-045_whitespace_only&amp;quot;,\n        ],\n    )\n    def test_api_login_input_validation(\n        tc_id, username, password, expected_status\n    ):\n        payload = {&amp;quot;username&amp;quot;: username}\n    \n        if password is not OMIT_PASSWORD:\n            payload[&amp;quot;password&amp;quot;] = password\n    \n        response = requests.post(\n            f&amp;quot;{BASE_URL}/auth/login&amp;quot;,\n            json=payload,\n            timeout=5,\n        )\n    \n&amp;gt;       assert response.status_code == expected_status, (\n            f&amp;quot;TC-API-{tc_id} \uc2e4\ud328: &amp;quot;\n            f&amp;quot;\uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc={expected_status}, &amp;quot;\n            f&amp;quot;\uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc={response.status_code}, &amp;quot;\n            f&amp;quot;\uc751\ub2f5={response.text}&amp;quot;\n        )\nE       AssertionError: TC-API-040 \uc2e4\ud328: \uae30\ub300 \uc0c1\ud0dc \ucf54\ub4dc=401, \uc2e4\uc81c \uc0c1\ud0dc \ucf54\ub4dc=500, \uc751\ub2f5={&amp;quot;message&amp;quot;:&amp;quot;Database error.&amp;quot;}\nE       assert 500 == 401\nE        +  where 500 = &amp;lt;Response [500]&amp;gt;.status_code\n\ntest\\api\\test_members_api.py:1141: AssertionError\n&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-041_null_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-041_null_username]&quot;, &quot;duration&quot;: &quot;31 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-041_null_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;31 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-042_null_password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-042_null_password]&quot;, &quot;duration&quot;: &quot;29 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-042_null_password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;29 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-043_empty_username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-043_empty_username]&quot;, &quot;duration&quot;: &quot;27 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-043_empty_username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;27 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-044_empty_password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-044_empty_password]&quot;, &quot;duration&quot;: &quot;29 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-044_empty_password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;29 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-045_whitespace_only]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_login_input_validation[TC-API-045_whitespace_only]&quot;, &quot;duration&quot;: &quot;33 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_login_input_validation[TC-API-045_whitespace_only]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;33 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/api/test_members_api.py::test_api_038_very_long_password_does_not_crash_server&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/api/test_members_api.py::test_api_038_very_long_password_does_not_crash_server&quot;, &quot;duration&quot;: &quot;362 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/api/test_members_api.py::test_api_038_very_long_password_does_not_crash_server&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;362 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::testdb_001_duplicate_username_rejected&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::testdb_001_duplicate_username_rejected&quot;, &quot;duration&quot;: &quot;64 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::testdb_001_duplicate_username_rejected&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;64 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_002_duplicate_email_rejected&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_002_duplicate_email_rejected&quot;, &quot;duration&quot;: &quot;55 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_002_duplicate_email_rejected&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;55 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[username]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[username]&quot;, &quot;duration&quot;: &quot;46 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[username]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;46 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[email]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[email]&quot;, &quot;duration&quot;: &quot;62 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[email]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;62 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[password]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[password]&quot;, &quot;duration&quot;: &quot;60 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[password]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;60 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[status]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[status]&quot;, &quot;duration&quot;: &quot;61 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_003_to_006_required_colums_reject_null[status]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;61 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_007_created_at_null_rejected&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_007_created_at_null_rejected&quot;, &quot;duration&quot;: &quot;63 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_007_created_at_null_rejected&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;63 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[ACTIVE]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[ACTIVE]&quot;, &quot;duration&quot;: &quot;67 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_008_allowed_status_values_saved[ACTIVE]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;67 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[INACTIVE]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[INACTIVE]&quot;, &quot;duration&quot;: &quot;61 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_008_allowed_status_values_saved[INACTIVE]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;61 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[SUSPENDED]&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_008_allowed_status_values_saved[SUSPENDED]&quot;, &quot;duration&quot;: &quot;61 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_008_allowed_status_values_saved[SUSPENDED]&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;61 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_009_invalid_status_rejected&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_009_invalid_status_rejected&quot;, &quot;duration&quot;: &quot;59 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_009_invalid_status_rejected&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;59 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_010_username_exceeds_max_length_rejected&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_010_username_exceeds_max_length_rejected&quot;, &quot;duration&quot;: &quot;63 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_010_username_exceeds_max_length_rejected&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;63 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_011_username_max_length_saved&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_011_username_max_length_saved&quot;, &quot;duration&quot;: &quot;62 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_011_username_max_length_saved&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;62 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_012_profile_rejects_nonexistent_member&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_012_profile_rejects_nonexistent_member&quot;, &quot;duration&quot;: &quot;62 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_012_profile_rejects_nonexistent_member&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;62 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members.py::test_db_013_login_history_rejects_nonexistent_member&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members.py::test_db_013_login_history_rejects_nonexistent_member&quot;, &quot;duration&quot;: &quot;63 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members.py::test_db_013_login_history_rejects_nonexistent_member&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;63 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;No log output captured.&quot;}], &quot;test/db/test_members_data.py::test_member_count&quot;: [{&quot;extras&quot;: [], &quot;result&quot;: &quot;Passed&quot;, &quot;testId&quot;: &quot;test/db/test_members_data.py::test_member_count&quot;, &quot;duration&quot;: &quot;74 ms&quot;, &quot;resultsTableRow&quot;: [&quot;&lt;td class=\&quot;col-result\&quot;&gt;Passed&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-testId\&quot;&gt;test/db/test_members_data.py::test_member_count&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-duration\&quot;&gt;74 ms&lt;/td&gt;&quot;, &quot;&lt;td class=\&quot;col-links\&quot;&gt;&lt;/td&gt;&quot;], &quot;log&quot;: &quot;----------------------------- Captured stdout call -----------------------------\n\u2460 DB \uc5f0\uacb0 \uc2dc\uc791\n\u2461 DB \uc5f0\uacb0 \uc131\uacf5\n&quot;}]}, &quot;renderCollapsed&quot;: [&quot;passed&quot;], &quot;initialSort&quot;: &quot;result&quot;, &quot;title&quot;: &quot;report.html&quot;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  
+</body></html>
