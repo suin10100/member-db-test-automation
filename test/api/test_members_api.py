@@ -1064,12 +1064,12 @@ def test_api_username_length_boundary(
 @pytest.mark.parametrize(
     "tc_id, password_length",
     [
-        ("031", 225),
+        ("031", 255),
         ("032", 256),
         ("033", 1),
     ],
     ids=[
-        "TC-API-031_password_length_225",
+        "TC-API-031_password_length_255",
         "TC-API-032_password_length_256",
         "TC-API-033_password_length_1",
     ]
