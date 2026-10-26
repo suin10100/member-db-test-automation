@@ -1,3 +1,4 @@
+# DB 연결 생성
 
 import os
 
